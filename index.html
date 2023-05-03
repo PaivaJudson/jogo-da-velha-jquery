@@ -5,13 +5,24 @@
 
 		<title>Jogo da velha</title>
 		<script src="jquery-2.2.1.js"></script>
+
+		<style>
+			#jogador1, #matriz, #jogador2{
+				display: inline-block;
+				margin-top: 50px;
+			}
+			#palco-jogo{
+				text-align: center;
+			}
+		</style>
+
 	</head>
 
 	<body>
 
 		<div id="pagina-inicial" align="center">
 
-			<table border="1" width="600px">
+			<table width="600px">
 				<tbody>
 					<tr>
 						<td colspan="3" style="text-align: center;"><h1>Jogo da Velha </h1></td>
@@ -20,14 +31,14 @@
 					<tr>
 						<td align="center">
 							<img src="imagens/jogador_1.png" style="margin:15px">
-							<input type="text" maxlength="10" style="margin:15px">
+							<input type="text" maxlength="10" style="margin:15px; border: 0px; text-align: center;" placeholder="Inserir Apelido Jogador 1" >
 						</td>
 						<td>
 							<img src="imagens/iniciar.png">
 						</td>
 						<td align="center">
 							<img src="imagens/jogador_2.png" style="margin:15px">
-							<input type="text" maxlength="10" style="margin:15px">
+							<input type="text" maxlength="10" style="margin:15px; border: 0px; text-align: center;" placeholder="Inserir Apelido Jogador 2">
 						</td>
 					</tr>
 				</tbody>
@@ -40,6 +51,19 @@
 
 
 		<div id="palco-jogo">
+
+			<div id="jogador1">
+				<img src="imagens/jogador_1.png" style="margin:15px">
+			</div>
+
+			<div id="matriz">
+				matriz
+			</div>
+
+
+			<div id="jogador2">
+				<img src="imagens/jogador_2.png" style="margin:15px">
+			</div>
 
 		</div>
 	</body>
