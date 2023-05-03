@@ -5,6 +5,7 @@
 
 		<title>Jogo da velha</title>
 		<script src="jquery-2.2.1.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 		<style>
 			#jogador1, #matriz, #jogador2{
@@ -14,11 +15,16 @@
 			#palco-jogo{
 				text-align: center;
 			}
+
+			.settings{
+				width: 100px;
+				height: 100px;
+			}
 		</style>
 
 	</head>
 
-	<body>
+	<body class="container">
 
 		<div id="pagina-inicial" align="center">
 
@@ -57,7 +63,47 @@
 			</div>
 
 			<div id="matriz">
-				matriz
+				
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+						<td>
+							<div class="settings"></div>
+						</td>
+					</tr>
+
+				</table>
+
+
 			</div>
 
 
