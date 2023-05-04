@@ -1,5 +1,7 @@
-$(document).ready( function(){
+var rodada = 1;
+var matriz_jogo = Array(3);
 
+$(document).ready( function(){
 
     $("#btn-iniciar").click(
         ()=>{
@@ -25,5 +27,31 @@ $(document).ready( function(){
             console.log('Passou')
         }
     );
+
+    $('.settings').click( function(){
+        
+        var id_campo_clicado = this.id;
+        jogada(id_campo_clicado)
+    });
+
+    function jogada(id){
+        var icone = '';
+        var ponto = 0;
+
+
+        if(rodada % 2 == 1){
+            icone = 'url("imagens/marcacao_1.png")';
+            ponto = -1;
+            console.log('Jogador 1')
+        }
+        else{
+            icone = 'url("imagens/marcacao_2.png")';
+            ponto = 1;
+            console.log('Jogador 2')
+        }
+        rodada++;
+
+        $('#'+id).css('background-image', icone);
+    }
 
 });
