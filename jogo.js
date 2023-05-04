@@ -16,7 +16,10 @@ $(document).ready( function(){
 
             $('#nome-jogador1').html($('#apelido-jogador1').val());
             $('#nome-jogador2').html($('#apelido-jogador2').val());
-           
+            
+            
+            $('#pagina-inicial').hide();
+            $('#palco-jogo').show();
 
 
             console.log('Passou')
